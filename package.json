@@ -6,15 +6,16 @@
     "prestart": "babel-node buildScripts/startMessage.js",
     "start": "npm-run-all --parallel open:src",
     "open:src": "babel-node buildScripts/srcServer.js",
+    "lint": "esw webpack.config.* src buildScripts --color",
     "share": "lt -p 8282 -s rbgautam"
   },
   "author": "Cory House",
   "license": "MIT",
-  "dependencies": {
-    "ajv": "^6.9.1",
-    "whatwg-fetch": "^3.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "ajv": "^6.9.1",
+    "babel": "^6.23.0",
+    "whatwg-fetch": "^3.0.0",
     "babel-cli": "^6.26.0",
     "babel-core": "^6.26.3",
     "babel-loader": "^7.1.5",
