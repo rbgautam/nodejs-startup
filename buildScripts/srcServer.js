@@ -3,8 +3,8 @@ import path from 'path';
 import open from 'open';
 import webpack from 'webpack';
 import config from '../webpack.config.dev';
-/*eslint-disbale no-console */ 
 
+/*elint-disable no-console*/
 const port = 8282;
 const app = express();
 const compiler = webpack(config);

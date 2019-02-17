@@ -6,7 +6,8 @@
     "prestart": "babel-node buildScripts/startMessage.js",
     "start": "npm-run-all --parallel open:src",
     "open:src": "babel-node buildScripts/srcServer.js",
-    "lint": "esw webpack.config.* src buildScripts --color",
+    "lint": "esw webpack.config.* src buildScripts --color; exit 0;",
+    "lint:watch": "npm run lint -- --watch",
     "share": "lt -p 8282 -s rbgautam"
   },
   "author": "Cory House",
