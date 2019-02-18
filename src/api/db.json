@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 70050575,
+      "firstName": "Devyn",
+      "lastName": "Predovic",
+      "email": "Oliver_Wintheiser49@gmail.com"
+    },
+    {
+      "id": 91337106,
+      "firstName": "Enola",
+      "lastName": "Muller",
+      "email": "Cicero.Schaefer@hotmail.com"
+    },
+    {
+      "id": 62190632,
+      "firstName": "Madelyn",
+      "lastName": "VonRueden",
+      "email": "Lenna19@hotmail.com"
+    },
+    {
+      "id": 33317051,
+      "firstName": "Abbigail",
+      "lastName": "Miller",
+      "email": "Estella.Gusikowski@hotmail.com"
+    }
+  ]
+}
