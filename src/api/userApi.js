@@ -9,7 +9,7 @@ export function getUsers(){
 
 export function deleteUser(id){
     console.log(`deleting user id : ${id}`);
-    return delete(`users/${id}`);
+    return del(`users/${id}`);
 }
 
 const del = (url) => {
