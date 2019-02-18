@@ -22,6 +22,18 @@ app.get('/',(req,res)=>{
 
 });
 
+app.get(
+    '/users',function (req, res) {
+        res.json(
+            [
+                {"id":1,"firstname":"bob","lastname":"Smith","email":"bob@gmail.com"},
+                {"id":2,"firstname":"Tammy","lastname":"Norton","email":"tnorton@yahoo.com"},
+                {"id":3,"firstname":"Tina","lastname":"Lee","email":"lee.tina@hotmail.com"}
+            ]
+        );
+    }
+) 
+
 app.listen(port , (err)=>{
     if(err){
         console.log(err);
