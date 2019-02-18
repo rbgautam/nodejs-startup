@@ -1,4 +1,3 @@
-import faker from "faker"
 import jsf from 'json-schema-faker';
 import {schema} from "./mockDataSchema";
 import fs from "fs";
@@ -6,7 +5,7 @@ import chalk from "chalk";
 
 jsf.extend('faker', () => require('faker'));
 
-const json = JSON.stringify(jsf(schema));
+
 const outputFile = "./src/api/db.json";
 
 jsf.resolve(schema).then(function(result) {
