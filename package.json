@@ -10,7 +10,7 @@
     "lint:watch": "npm run lint -- --watch",
     "share": "lt -p 8282 -s rbgautam",
     "generate-mock-data": "babel-node buildScripts/generateMockData",
-    "test": "mocha --require babel-core/register --reporter progress buidScripts/testSetup.js \"src/**/*.test.js\"",
+    "test": "mocha --require babel-core/register --reporter spec buidScripts/testSetup.js \"src/**/*.test.js\"",
     "prestart-mockapi": "npm run generate-mock-data",
     "start-mockapi": "json-server --watch src/api/db.json --port 3001"
   },
