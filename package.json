@@ -10,7 +10,7 @@
     "lint:watch": "npm run lint -- --watch",
     "share": "lt -p 8282 -s rbgautam",
     "generate-mock-data": "babel-node buildScripts/generateMockData",
-    "test": "mocha --require babel-core/register --reporter spec buidScripts/testSetup.js \"src/**/*.test.js\"",
+    "test": "mocha --timeout 10000 --require babel-core/register --reporter spec buidScripts/testSetup.js \"src/**/*.test.js\"",
     "prestart-mockapi": "npm run generate-mock-data",
     "start-mockapi": "json-server --watch src/api/db.json --port 3001"
   },
@@ -39,7 +39,8 @@
     "extract-text-webpack-plugin": "^3.0.2",
     "faker": "^4.1.0",
     "html-webpack-plugin": "2.22.0",
-    "jsdom": "^13.1.0",
+    "jquery": "^3.3.1",
+    "jsdom": "^13.2.0",
     "json-schema-faker": "^0.5.0-rc16",
     "json-server": "^0.14.0",
     "localtunnel": "^1.9.1",
